@@ -98,7 +98,7 @@ def main():
     tmp=[]
     for s in sentences:
         result = sent.analyze(s.lower())
-        print(result)
+        print(s,result)
         tmp.append(result['score'])
     for row in tmp:
             print(row)
